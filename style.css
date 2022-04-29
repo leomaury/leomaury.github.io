@@ -1,3 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: black;
+  }
+}
+
+
 /*STYLES GENERAUX*/
 *{
     font-family: Avenir, sans-serif;
@@ -6,18 +14,25 @@
     text-align: justify;
     box-sizing: border-box;
 }
-body{
-    background: #ededed;
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #eee;
+    background: black;
+  }
 }
+/*body{
+    background: #ededed;
+}*/
 p{
     font-size: 1em;
     line-height: 1.5em;
 }
-a{
-    text-decoration: none;
-    color: #000;
+@media (prefers-color-scheme: dark) {
+    a{
+        text-decoration: none;
+        color: #eee;
+    }
 }
-
 /*HEADER & FOOTER*/
 header, footer{
     width: 100%;
@@ -92,16 +107,31 @@ footer a{
 }
 
 /*SECTIONS*/
-section{
-    display: flex; 
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 20px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 10px #bbb;
-    background-color: #fff;
-    border-radius: 10px;
+@media (prefers-color-scheme: dark) {
+    section{
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 20px auto;
+        box-shadow: 0px 0px 10px #bbb;
+        background-color: black;
+        border-radius: 10px;
+    }
+}
+@media (prefers-color-scheme: light) {
+    section{
+        display: flex; 
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 20px;
+        margin: 20px auto;
+        box-shadow: 0px 0px 10px #bbb;
+        background-color: #fff;
+        border-radius: 10px;
+    }
 }
 
 section h2{
