@@ -1,2 +1,2 @@
-# leomaury_cv.github.io
+# leomaury.github.io
 CV Léo Maury
